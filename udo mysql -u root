@@ -1,0 +1,22 @@
+[0;1;32m●[0m mariadb.service - MariaDB 10.4.6 database server
+   Loaded: loaded (/usr/lib/systemd/system/mariadb.service; enabled; vendor preset: disabled)
+   Active: [0;1;32mactive (running)[0m since Tue 2019-07-23 18:07:24 MSK; 17h ago
+     Docs: man:mysqld(8)
+           https://mariadb.com/kb/en/library/systemd/
+ Main PID: 442 (mysqld)
+   Status: "Taking your SQL requests now..."
+    Tasks: 31 (limit: 4915)
+   Memory: 93.7M
+   CGroup: /system.slice/mariadb.service
+           └─442 /usr/bin/mysqld
+
+июл 23 18:07:23 leo mysqld[442]: 2019-07-23 18:07:23 0 [Note] InnoDB: 10.4.6 started; log sequence number 139167; transaction id 23
+июл 23 18:07:23 leo mysqld[442]: 2019-07-23 18:07:23 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+июл 23 18:07:23 leo mysqld[442]: 2019-07-23 18:07:23 0 [Note] InnoDB: Buffer pool(s) load completed at 190723 18:07:23
+июл 23 18:07:24 leo mysqld[442]: 2019-07-23 18:07:24 0 [Note] Server socket created on IP: '::'.
+июл 23 18:07:24 leo mysqld[442]: 2019-07-23 18:07:24 0 [Note] Reading of all Master_info entries succeeded
+июл 23 18:07:24 leo mysqld[442]: 2019-07-23 18:07:24 0 [Note] Added new Master_info '' to hash table
+июл 23 18:07:24 leo mysqld[442]: 2019-07-23 18:07:24 0 [Note] /usr/bin/mysqld: ready for connections.
+июл 23 18:07:24 leo mysqld[442]: Version: '10.4.6-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  Source distribution
+июл 23 18:07:24 leo systemd[1]: Started MariaDB 10.4.6 database server.
+июл 24 10:05:24 leo mysqld[442]: 2019-07-24 10:05:24 12 [Warning] Aborted connection 12 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
